@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <script type="text/javascript">
+        function preventBack() { window.history.forward() };
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null; }
+      
+    </script>
+</head>
+
+<body>
+
+    <h1>Hello, welcome</h1>
+    <form id="loginForm" method="post" action="/role1">
+        <button type="submit">Role 1 </button>
+        <br><br>
+    </form>
+    <form id="loginForm" method="post" action="/role2">
+        <button type="submit">Role 2 </button>
+        <br><br>
+    </form>
+    <form id="loginForm" method="post" action="/loggedout">
+        <button type="submit">Logout </button>
+        <br><br>
+    </form>
+</body>
+
+</html>

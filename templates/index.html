@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function preventBack() { window.history.forward() };
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null; }
+    </script>
+</head>
+
+<body>
+    <h2>Login Page</h2><br>
+    <form id="loginPage" method="post" action="/login">
+        <button>login</button>
+    </form>
+</body>
+
+</html>
